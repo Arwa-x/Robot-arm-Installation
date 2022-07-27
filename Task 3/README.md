@@ -69,6 +69,6 @@ source ~/.bashrc
 roslaunch robot_arm_pkg check_motors.launch
 ```
 
- ![Robotic arm](Task 3/Arm.png)
+ ![Robotic arm](Arm.png)
  
- ![Robotic arm](Task 3/Arm 2.png)
+ ![Robotic arm2](Arm 2.png)
