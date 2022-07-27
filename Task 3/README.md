@@ -43,7 +43,7 @@ git clone https://github.com/smart-methods/arduino_robot_arm.git
 cd ~/catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
 ```
-If your using another Ros distro just replace the noetic to the one you are working on
+If your using another ROS distro just replace the noetic to the one you are working on
 ```
 sudo apt-get install ros-noetic-moveit
 sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
@@ -58,7 +58,7 @@ Enter your password then add the follwing line at the end of the (bashrc) file a
 ```
 source /home/arwa/catkin_ws/devel/setup.bash
 ```
-Then press Ctrl + o, Enter, Ctrl + x
+Then press Ctrl+o, Enter, Ctrl+x
 * Update your .bashrc file
 ```
 source ~/.bashrc
