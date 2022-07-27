@@ -13,66 +13,60 @@ When you finish run the following command to make sure that it has been installe
 ```
 roscore
 ```
-# Getting started
-With the following, you can initialize rosdep
+## Getting started
+Update your rosdep
 ```
-sudo rosdep init
 rosdep update
 ```
-### Install Prebuilt Package 1
+## Install Prebuilt Package of catkin
 ```
 sudo apt-get install ros-noetic-catkin
 ```
-
-## Managing Your Environment ????
-If you just installed ROS from apt on Ubuntu then you will have setup.*sh files in '/opt/ros/<distro>/', and you could source them like so:
+## Create a ROS Workspace
+Create the catkin root and source folders, you can change the name of the workspace used here
 ```
-source /opt/ros/noetic/setup.bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
 ```
-### Create a ROS Workspace 2
+Configure your catkin workspace
 ```
- mkdir -p ~/catkin_ws/src
- cd ~/catkin_ws/
+catkin_make
+cd ~/catkin_ws/src
 ```
- Configure the catkin workspace by issuing a first “empty” build command:
- ```
- catkin_make
- cd ~/catkin_ws/src
- ```
- Launching ROS on a project from @Smart_methods for a robotic arm , Clone Github repository
- ```
- git clone https://github.com/smart-methods/arduino_robot_arm.git 
- ```
- Check the dependencies
- ```
- cd ~/catkin_ws
- rosdep install --from-paths src --ignore-src -r -y
- ```
- ## make sure you installed all these packages
- ```
+Clone the robotic arm packages provided from @Smart_methods
+```
+git clone https://github.com/smart-methods/arduino_robot_arm.git 
+```
+## Install dependencies
+* Ensure that you have installed all these packages
+```
+cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
+```
+If your using another Ros distro just replace the noetic to the one you are working on
+```
 sudo apt-get install ros-noetic-moveit
 sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
 sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
 sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
  ```
-Finally, update your .bashrc script with the information about the new workspace:
+* Add source (setup.bash) to .bashrc file
 ```
 sudo nano ~/.bashrc
 ```
-
-at the end of the (bashrc) file add the follwing line Make sure to change the username
+Enter your password then add the follwing line at the end of the (bashrc) file and make sure to change the username to your own
+If you forgot the username just go to your catkin_ws > devel > setup.bash, right click > properties
 ```
-(source /home/arwa/catkin_ws/devel/setup.bash)
+source /home/arwa/catkin_ws/devel/setup.bash
 ```
-then ctrl + o
+Then press Ctrl + o, Enter, Ctrl + x
+* Update your .bashrc file
 ```
 source ~/.bashrc
-
 ```
-The final command to finally launch the project
+* Launch the project
 ```
 roslaunch robot_arm_pkg check_motors.launch
 ```
- 
  
  
