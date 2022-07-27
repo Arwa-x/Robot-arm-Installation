@@ -70,4 +70,4 @@ roslaunch robot_arm_pkg check_motors.launch
 ```
 ## Results
 ![Robotic arm](Arm.png)
-
+![Robotic arm](Arm2.png)
