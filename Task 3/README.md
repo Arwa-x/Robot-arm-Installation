@@ -55,7 +55,6 @@ sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
 sudo nano ~/.bashrc
 ```
 Enter your password then add the follwing line at the end of the (bashrc) file and make sure to change the username to your own
-If you forgot the username just go to your catkin_ws > devel > setup.bash, right click > properties
 ```
 source /home/arwa/catkin_ws/devel/setup.bash
 ```
@@ -69,5 +68,6 @@ source ~/.bashrc
 roslaunch robot_arm_pkg check_motors.launch
 ```
 ## Results
+Now you can control the robotic arm on Rviz which is a 3D visualization tool for ROS
 ![Robotic arm](Arm.png)
 ![Robotic arm](Arm2.png)
