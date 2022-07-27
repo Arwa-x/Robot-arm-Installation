@@ -34,7 +34,7 @@ catkin_make
 cd ~/catkin_ws/src
 ```
 ## Install dependencies and launch the project
-Clone the robotic arm packages provided from @Smart-methods
+Clone the robotic arm packages provided from [@Smart-methods](https://github.com/smart-methods)
 ```
 git clone https://github.com/smart-methods/arduino_robot_arm.git 
 ```
