@@ -69,5 +69,6 @@ roslaunch robot_arm_pkg check_motors.launch
 ```
 ## Results
 Now you can control the robotic arm on Rviz which is a 3D visualization tool for ROS
+
 ![Robotic arm](Arm.png)
 ![Robotic arm](Arm2.png)
