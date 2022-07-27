@@ -4,10 +4,10 @@ Using ROS packages, you can plan and execute motions for a robot arm in simulati
 I have tested these packages under ROS noetic and Ubuntu 20.04 with no issues
 
 Before you start to install the robotic arm packages, you need to do the following:
-* Download and install the latest version of VirtualBox, link: https://www.virtualbox.org/wiki/Downloads
-* Download and install an Ubuntu image, link: https://ubuntu.com/download/desktop
+* Download and install the latest version of VirtualBox, [Link](https://www.virtualbox.org/wiki/Downloads)
+* Download and install an Ubuntu image, [Link](https://ubuntu.com/download/desktop)
 * Create your new VM
-* Install ROS in ubuntu, by following the instruction in this website: http://wiki.ros.org/Installation/Ubuntu
+* Install ROS in ubuntu, by following the instruction in this [website](http://wiki.ros.org/Installation/Ubuntu)
 
 When you finish run the following command to make sure that it has been installed successfully, then press Ctrl+C
 ```
@@ -33,11 +33,11 @@ Configure your catkin workspace
 catkin_make
 cd ~/catkin_ws/src
 ```
+## Install dependencies and launch the project
 Clone the robotic arm packages provided from @Smart_methods
 ```
 git clone https://github.com/smart-methods/arduino_robot_arm.git 
 ```
-## Install dependencies
 * Ensure that you have installed all these packages
 ```
 cd ~/catkin_ws
@@ -64,7 +64,7 @@ Then press Ctrl + o, Enter, Ctrl + x
 ```
 source ~/.bashrc
 ```
-* Launch the project
+* Finally launch the project
 ```
 roslaunch robot_arm_pkg check_motors.launch
 ```
